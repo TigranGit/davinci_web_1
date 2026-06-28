@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #e4e0e0;
+    color: #202020;
+}
+
+header {
+    background-color: #302f2f;
+    color: #ffffff;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+    font-size: 28px;
+}
+
+header p {
+    font-size: 15px;
+    color: #e1dcdc;
+}
+
+nav {
+    background-color: #434343;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px 5px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #faf8f5;
+}
+
+section {
+    margin-bottom: 25px;
+    padding: 10px 0;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+ol {
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+main a {
+    color: #050587;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 15px auto;
+    width: fit-content;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #938e8e;
+    border-radius: 8px;
+    text-align: center;
+}
+
+figure img { border-radius: 6px; }
+
+figcaption {
+    font-size: 14px;
+    color: #545252;
+    margin-top: 6px;
+}
+
+audio {
+    max-width: 100%;
+}
+
+.filaActores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.secReparto .cadroActor {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #a4a0a0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 320px;
+}
+
+.secReparto .cadroActor h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.secReparto .cadroActor img {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+}
+
+.cadrosFila {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #cdc9c9;
+    text-align: center;
+}
+
+.cadrosFila figure {
+    margin: 0 auto;
+}
+
+details {
+    margin-top: 12px;
+    padding: 10px;
+    border: 1px solid #cdc9c9;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+details p {
+    margin-top: 8px;
+}
+
+footer {
+    background-color: #333333;
+    color: #dad6d6;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 14px;
+}

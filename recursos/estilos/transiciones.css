@@ -1,0 +1,40 @@
+nav a {
+    transition: background-color 0.2s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: #555555;
+}
+
+nav a:focus {
+    outline: 2px solid #e1dcdc;
+    outline-offset: 2px;
+}
+
+.secReparto .cadroActor {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.secReparto .cadroActor:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+}
+
+.secReparto .cadroActor img {
+    filter: grayscale(1);
+    transition: filter 0.2s;
+}
+
+.secReparto .cadroActor:hover img {
+    filter: grayscale(0);
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+summary:hover {
+    color: #050587;
+}

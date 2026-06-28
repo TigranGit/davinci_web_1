@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interstellar - Contacto</title>
-    <link rel="stylesheet" href="../recursos/estilos/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="../recursos/imagenes/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../recursos/estilos/general.css">
+    <link rel="stylesheet" href="../recursos/estilos/formulario.css">
+    <link rel="stylesheet" href="../recursos/estilos/transiciones.css">
 </head>
 <body>
     <header>
@@ -22,14 +28,35 @@
         </ul>
     </nav>
 
-    <main>
+    <main >
         <section>
             <h2>Contacto</h2>
             <p><strong>Nombre:</strong> Tigran</p>
             <p><strong>Apellido:</strong> Nalbandyan</p>
             <p><strong>Email:</strong> tigran.nalbandyan@davinci.edu.ar</p>
         </section>
-        <section style="margin-bottom: 300px;">
+
+        <section>
+            <h2>Enviar mensaje</h2>
+            <p>Dejá un mensaje sobre la película.</p>
+            <form action="./confirmacion.html" method="get" class="formContacto">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required minlength="10"></textarea>
+
+            <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section>
             <h2>Enlaces</h2>
             <p>Algunos enlaces externos de referencia.</p>
             <ul>
