@@ -8,6 +8,7 @@ body {
     font-family: "Open Sans", sans-serif;
     background-color: #e4e0e0;
     color: #202020;
+    overflow-x: hidden;
 }
 
 header {
@@ -112,6 +113,26 @@ audio {
     max-width: 100%;
 }
 
+.boxVideo {
+    width: 100%;
+    padding: 0;
+}
+
+.videoCont {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.videoCont iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 .filaActores {
     display: flex;
     flex-wrap: wrap;
@@ -172,4 +193,138 @@ footer {
     padding: 15px 20px;
     text-align: center;
     font-size: 14px;
+}
+
+.filaInicio {
+    display: flex;
+    gap: 20px;
+}
+
+.filaInicio .txtPrincipal {
+    width: 60%;
+}
+
+.filaSobre {
+    display: flex;
+    gap: 15px;
+}
+
+.filaSobre section {
+    width: 50%;
+}
+
+.filaContacto {
+    display: flex;
+    gap: 20px;
+}
+
+.filaContacto section {
+    width: 50%;
+}
+
+
+@media (max-width: 700px) {
+
+body {
+    font-size: 14px;
+}
+
+header {
+    padding: 15px;
+}
+
+header h1 {
+    font-size: 22px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+
+main {
+    max-width: 100%;
+    padding: 10px;
+}
+
+section h2 {
+    font-size: 18px;
+}
+
+.cadrosFila {
+    display: block;
+}
+
+.cadrosFila figure {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.filaInicio {
+    display: block;
+}
+
+.filaInicio .txtPrincipal {
+    width: 100%;
+}
+
+.filaSobre {
+    display: block;
+}
+
+.filaSobre section {
+    width: 100%;
+}
+
+.filaContacto {
+    display: block;
+}
+
+.filaContacto section {
+    width: 100%;
+}
+
+.figPoster {
+    width: 100%;
+}
+
+.figPoster img {
+    width: 100%;
+}
+
+.boxVideo {
+    width: 100%;
+}
+
+figure {
+    width: 100%;
+    max-width: 100%;
+}
+
+audio {
+    width: 100%;
+}
+
+.secReparto .cadroActor {
+    max-width: 100%;
+}
+
+.ocultarMovil {
+    display: none;
+}
+
+.txtReparto {
+    font-size: 13px;
+}
+
+footer {
+    font-size: 12px;
+}
+
 }

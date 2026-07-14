@@ -39,3 +39,21 @@
 .formContacto button:hover {
 	background-color: #434343;
 }
+
+@media (max-width: 700px) {
+.formContacto {
+	max-width: 100%;
+}
+
+.formContacto input {
+	width: 100%;
+}
+
+.formContacto textarea {
+	width: 100%;
+}
+
+.formContacto button {
+	width: 100%;
+}
+}
